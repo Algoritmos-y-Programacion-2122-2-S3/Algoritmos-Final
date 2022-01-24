@@ -5,5 +5,6 @@ def main():
         print(table,str(i) + f" = {table * i}", sep=" x ")
     
 
+
 if __name__ == "__main__":
     main()
