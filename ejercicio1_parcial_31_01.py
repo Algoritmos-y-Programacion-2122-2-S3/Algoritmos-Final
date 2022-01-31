@@ -21,7 +21,6 @@ def main():
                 aux -= 1
         print("Divider",divider_list)
 
-
         for number_divider in divider_list:
             aux2 = number_divider - 1
             while aux2 > 1:
@@ -51,8 +50,6 @@ def main():
 
         if len(result_list) == 0:
             print("There are not prime numbers")
-
-
 
 
     else: 
