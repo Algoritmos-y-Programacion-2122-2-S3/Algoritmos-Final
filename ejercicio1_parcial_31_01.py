@@ -22,14 +22,18 @@ def main():
         print("Divider",divider_list)
 
         for number_divider in divider_list:
-            aux2 = number_divider - 1
-            while aux2 > 1:
-                if number_divider % aux2 == 0:
-                    is_prime = False
-                aux2 -=1
-                if aux2 == 1:
-                    if is_prime:
-                        prime_list.append(number_divider)
+            if number_divider == 2: 
+                 prime_list.append(number_divider)
+            else:
+                aux2 = number_divider - 1
+                while aux2 > 1:
+                    if number_divider % aux2 == 0:
+                        is_prime = False
+                    aux2 -=1
+                    if aux2 == 1:
+                        if is_prime:
+                            prime_list.append(number_divider)
+                        is_prime = True
 
         cont=0
         cont2= 1
