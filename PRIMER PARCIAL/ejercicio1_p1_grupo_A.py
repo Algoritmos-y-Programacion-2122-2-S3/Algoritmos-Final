@@ -15,6 +15,7 @@ def verify_phrase_count_letters(phrase,alphabet):
     for letter in alphabet:
         if str(phrase).lower().count(letter) > 1:
             result.add(letter)
+    print(result)
     return result
 
 def print_results(result_pangrama, result_letters):

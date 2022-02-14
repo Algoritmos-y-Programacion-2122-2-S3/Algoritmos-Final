@@ -112,7 +112,7 @@ def get_client_data(seats_requested,option_selected,options):
     else: 
         discount_amount = 0
     iva = (gross_amount - discount_amount) * 0.16
-    net_amount = gross_amount - discount_amount - iva
+    net_amount = gross_amount - discount_amount + iva
 
     client = {
         "id": input("Please enter your id card number: "),
