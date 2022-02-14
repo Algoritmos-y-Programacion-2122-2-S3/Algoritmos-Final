@@ -14,7 +14,9 @@ def expresos_saman(options):
     best_client = {}
     exit = False 
     total_net_amount = 0
-    
+
+    print("*** WELCOME TO EXPRESOS SAMAN ***\n")
+
     while not exit:
         if already_all_destinations_full(seats_vehicle_valencia,seats_vehicle_barquisimeto,seats_vehicle_pto_la_cruz):
             print("Sorry we do not have more seats available to any destinations" )
