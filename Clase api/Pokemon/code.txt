@@ -1,0 +1,9 @@
+for pokemon in payload.get("results"):
+            pokemon_object = Pokemon("","")
+            for key, value in pokemon.items():
+                if key == "name":
+                    pokemon_object.name = value
+                else: 
+                    pokemon_object.url = value
+            pokemons.append(pokemon_object)
+        print(pokemons)
