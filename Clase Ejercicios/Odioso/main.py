@@ -1,8 +1,12 @@
 def main():
     number_to_verify = int(input("Please give me a number to verify if is a hateful number: \n"))
-    number_list = transfor_to_binary(number_to_verify)
-    is_even = ones_counter(number_list)
-    print_result(is_even, number_to_verify)
+    lista = []
+    number_list = transfor_to_binary(number_to_verify, lista)
+    number_list.reverse()
+    print(number_list)
+    ones_count = ones_counter(number_list)
+    is_hateful_variable = is_hateful(ones_count)
+    print_result(is_hateful_variable, number_to_verify)
 
 def print_result(is_hateful, number):
     if is_hateful:
